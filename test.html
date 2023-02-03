@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .title-slideshow,
+        .title-slideshow:after {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .title-slideshow:after {
+            content: '';
+        }
+
+        .title-slideshow li h1 {
+            z-index: 2000;
+            position: absolute;
+            top: 15%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .title-slideshow li div {
+            z-index: 1000;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            opacity: 0;
+            animation-name: titleAnimation;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+        }
+
+        .title-slideshow li div h2 {
+            padding: 0;
+        }
+
+        .title-slideshow li:nth-child(1) div {
+            animation-delay: 0s;
+        }
+
+        .title-slideshow li:nth-child(2) div {
+            animation-delay: 5s;
+        }
+
+        .title-slideshow li:nth-child(3) div {
+            animation-delay: 10s;
+        }
+
+        .title-slideshow li:nth-child(4) div {
+            animation-delay: 15s;
+        }
+
+        @keyframes titleAnimation {
+            0% {
+                opacity: 0;
+                animation-timing-function: linear;
+            }
+
+            8% {
+                opacity: 1;
+                animation-timing-function: linear;
+            }
+
+            17% {
+                opacity: 1;
+                animation-timing-function: linear;
+            }
+
+            19% {
+                opacity: 0;
+                animation-timing-function: linear;
+            }
+
+            100% {
+                opacity: 0;
+                animation-timing-function: linear;
+            }
+        }
+
+        .no-cssanimations .title-slideshow li div {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="title-slideshow bg-white">
+        <li class="">
+            <h1 class="text-black text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] font-extrabold">Generate your next</h1>
+            <div class="mt-[50px]">
+                <h2 class="text-red-500 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] font-extrabold">interior design</h2>
+            </div>
+        </li>
+        <li class="">
+            <div class="mt-[50px]">
+                <h2 class="text-blue-500 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] font-extrabold">fashion collection</h2>
+            </div>
+        </li>
+        <li class="">
+            <div class="mt-[50px]">
+                <h2 class="text-yellow-500 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] font-extrabold">painting</h2>
+            </div>
+        </li>
+        <li class="">
+            <div class="mt-[50px]">
+                <h2 class="text-cyan-500 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] font-extrabold">concept art</h2>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>
