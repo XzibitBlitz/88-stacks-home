@@ -1,551 +1,556 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8" />
-    <title>88 Stacks Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Demo styles -->
+    <title>88stacks</title>
     <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .swiper-slide {
             text-align: center;
-            font-size: 18px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .swiper-pagination {
-            position: static;
-            top: 0px;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            width: 100%;
-        }
     </style>
 </head>
 
-<body class="container min-h-full">
-    <div class="absolute inset-0 swiper mySwiper max-h-full text-center mx-auto z-50 px-[10px]">
-        <div class="static text-center">
-            <h1 class="text-black text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] font-extrabold">
-                Generate your next
-            </h1>
+<body class="bg-white dark:bg-gray-950 dark:text-white">
+    <div class="relative inset-0 h-screen overflow-hidden z-10">
+        <div class="absolute inset-0 pt-[max(80px,20vh)] flex justify-center z-20">
+            <div class="flex flex-col items-center">
+                <div class="relative text-4xl mt-4 md:mt-8 md:mt-0 md:text-6xl font-extrabold text-center leading-snug">
+                    <span>Generate your next</span>
+                    <br />
+                    <div class="absolute swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide flex justify-center items-center text-red-600">interior design
+                            </div>
+                            <div class="swiper-slide flex justify-center items-center text-blue-500">fashion collection
+                            </div>
+                            <div class="swiper-slide flex justify-center items-center text-yellow-500">painting</div>
+                            <div class="swiper-slide flex justify-center items-center text-cyan-500">concept art</div>
+                        </div>
+                    </div>
+                </div>
+                <h2
+                    class="hidden md:block text-2xl mt-20 text-gray-600 dark:text-gray-400 text-center leading-normal max-w-lg">
+                    Use our powerful AI technology to generate any type of image you can think of. In a matter of
+                    seconds.
+                </h2>
+            </div>
         </div>
-        <div class="swiper-wrapper -mt-[250px] 2xl:-mt-[320px]">
-            <div class="swiper-slide">
-                <h2 class="text-red-500 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] font-extrabold">interior design</h2>
+        <div class="absolute inset-0 pt-[33vh] w-full flex justify-center overflow-hidden">
+            <div
+                class="fixed bottom-0 left-0 right-0 z-30 bg-gradient-to-b from-white/0 dark:from-black/0 to-white dark:to-black p-8 flex items-center">
+                <div class="mx-auto">
+                    <a class="flex group items-center cursor-pointer mt-5 rounded-full border border-transparent bg-black dark:bg-white py-2 px-4 text-lg font-medium text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100"
+                        href="/start">
+                        Try it yourself
+                        <svg class="mt-0.5 ml-2 -mr-1 stroke-white dark:stroke-black stroke-2" fill="none" width="12"
+                            height="12" viewBox="0 0 10 10" aria-hidden="true">
+                            <path class="opacity-0 transition group-hover:opacity-100" d="M0 5h7"></path>
+                            <path class="transition group-hover:translate-x-[3px]" d="M1 1l4 4-4 4"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <h2 class="text-blue-500 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] font-extrabold">fashion collection</h2>
+            <div class="w-[800px] md:w-[1800px] absolute swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="absolute grid grid-cols-7 gap-4 shrink-0 md:mt-[240px] 2xl:-mt-[340px]">
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/1-6ef915041f5389ecf4ec0cf6b6cb76a14285786f2680139ec835f1c11e34c1b4.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/2-3b554b08df909dffe5e37920eabf8140dc94edafdcad0806a87b1f6c7c267422.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/3-d038b764a9c2ef51ca8bed304b0d488e69238f658ae346b95c22a9f1634bb2b5.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/4-a3545f141e979dcd06cb5a0037b8d00eb6258ff420268b9135f0c7e3e203df44.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/5-87a48483b5cebd4728e65931ebfed977456e6eb7f0cc2b85304a1b7528aa78fa.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/6-71d0c14c9c75e7875183dbb922ed0634fa0595a37bb9b14365eb70b1e400879b.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/7-1b3e50f4d38a94c290af4df48484dc083fce3f2fbedf94004c0221d8324900b1.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/8-4a8d42c30cabf28c3dbd740e90e3a71ea655d79027f951fc50ef3bf7f9422790.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/9-a30f819659b5b6e9021700339ff5c1b037e5fa2a614b69f15f9f7bbc8b45044e.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/10-8ddce98ec7bae1ee068fc0a56d7c5d72799e848c8dc3e53790eaf212cfa844f7.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/11-9c90c8d4b95d40e06b459a4c17625819ae59f9957410899b5c32f144bc17b663.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/12-8bd4be1216d353daaaf61860eb4ad66b320883d4581546c53a7b708540fa81c7.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/13-84009fb2cafb09512985defaeefee75322800278e5610d79c59b7eb06df05f52.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/14-25fe0d0a8d990c7df6b5b9feabfc5451c0b235515f4bc492610b4ce8ebe94dd0.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/15-d4038cfaaa8beadca896fa09925e11d1aad0d8c4a170b58a4eb1b42d3ca57de0.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/16-2e94319cfdb3ea8dda6aad74ccf163346f1db6cfa2ef413f1e79d0610b065f89.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/17-b0065d55e13cac95906b50c41c746b08766bc76108c994003381746b80fb8887.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/18-0238233e45b6fd311f859f7e42f819c9f17332b7b32fbc89ef2070a6c96b5cbf.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/19-cf23e4e2e82a7728131b52dff9efe1bd3e11262043752542a22888d2a4a3e38f.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/20-d2d4a0f9b4098693101c7ae77e1d666c959ae6d3880ab86b32f8fdf3edb52842.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/interior/21-006756d957a1f115c2e34bd013cc0e62c89c09af65f0e5a7482958f7715057bd.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="absolute grid grid-cols-7 gap-4 shrink-0 md:mt-[440px] 2xl:-mt-[340px]">
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/1-2a0ca28cfabf580e1ffce88b27a633f0a6b57583e225fd5ea1f5d2c4ce3f9300.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/2-df5391e5cf2b957971e22f889d241b937ba0e3135b9a9ea1312f13dbbce3af49.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/3-229acb8b1d3efa664f3cafe874cee175561bfbf23344aaa0e979d7e579ef9d56.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/4-44405b912af1042ed811fd05b889e44f1d5b7a7ddb2a5382cc4c29fa4d393794.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/5-f75e2ec89045c8132c9811b0a6bd3c1118dd5ea60d61aac964d0c89b50db7630.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/6-00e5af5b78c95fff76d53ebcb9a29eb1adbceb127e41b88f86eb8fa1792d55b7.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/7-e1c71881f45e4cd65686efc598c553fd3413840a97d84948f77bf5417fd303e4.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/8-9b6516a4bd16471c5c8b59e9989807bf6ce702fc6160a22ad798a10490669c4d.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/9-58dd7b9fdf2a8c3f2c62280b7a3cf81c5a7d7ab25eb4e2a80235edd1f9b5b894.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/10-0f6c677c96e4abacf3097b2924f7ed5142d30771036921afe1f62b1d4ad55321.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/11-ec57e25f7875d9044d009644db90afbdc6e4fb8e2eb8038aaf4cd6af5b1abdbb.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/12-3815f591880fbdb61e60b70eed72ab42925100d3856f3bb8ac00fddd63cd09be.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/13-daa1aa0b987d6a3a8eabd1d8db61cb58f84e4327ca81c205004a49a82f048779.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/14-809d63f951897828949a28a06932ee6bd8d10daea9f0d6c9f8973c0c78f133eb.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/15-5a66f4503c0f04e483fb0ef8ed5aa7e7beba6ee8abed541b10031ec3433a48f7.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/16-6abe316a55a28c6e3b8955ed4eab2b2e58ffb2c57c9e370b7d48592069c93c38.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/17-61b80ec80bc8a50d3dc23563f3c127a2e27624d6c8a9108bb57837a09e7c2c4d.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/18-874bbc65221f7aee92642d2281175613334e6384b772c7eaf30bcfc817c1b4b0.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/19-8c4c073f27442ad9fb59c1aab803e8a4d1ec72e98fad7969c0529fef4516c789.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/20-40945376d87bb9879b2ec316aa18d146fd4728e3970ff65ab535553ae0238004.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/fashion/21-a3d866edf4a094bd07fa770c2574834594cacf110a9c03e0c4c2939ba4a27f3f.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="absolute grid grid-cols-7 gap-4 shrink-0 md:mt-[440px] 2xl:-mt-[440px]">
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/1-6729e6fe92b6b6e90bef48fb32ca81cbe2ccabab9404ddcd6564a072728e3a0c.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/2-40fd2f801dea062e17b5016b26069c67faa3cdd9a47e57f2804c9f97e14aa58d.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/3-c96e25d5559fc6d5d1d26ecf4b03ccd5c93ebdd0df62b53725c7a3b328027408.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/4-8b0f1d826d7c08cdffe2e615a8dc33979ec78079d4e27294d7fcd0713adfd51a.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/5-99522e8536c5084ceefba72bbb8a4ff3172442014727b46aef8051f59fef52a6.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/6-d00a72e576b692fbb0433d01aca3d5a984d4397fdd8ae3c8afbf6b51df522743.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/7-edbd49bf23ef05a3f2b8b7cc3660dbfcf710adf6e2f3881ef955e41cdd108c01.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/8-cf19f6a68388a5e50097c9aa59aab5a8dbd68241844c868276a4c4752dae6121.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/9-edadb5eaf86ddd8a5d7a47ff139fb0144b0c3cc6899113ff3e9125173fdec846.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/10-b0360419636549dcba629749b146f539b666a6f33b273dc48040a0b6b52aaa13.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/11-3d215d94b19f549f9608fd2333124f93e62b0dc45cc706f25525c272c3bbe1f7.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/12-fbdc53706770d9aedbf648a134066d9c519bbd66bc7327d457cca7cd130a3b24.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/13-10d54833ba9765fa23b96576aaa82df8bde944207326c9240ca6cdc31bb22654.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/14-ed53d73b3bac2f1cbce4b688f74309de8ba6e05592891aaf9910444ba8709b7e.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/15-80391b7dd5ddd43753c6e7a0239bd69477008150044b47826a73c18404c3a651.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/16-73d51d8fb19a924b0890f9bc46cfba06f8cc5157241a9052ed015047446b868b.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/17-48344eeafbf323dc8782576197c67aba41ca4d472b31cf03ad4ea3d270289a68.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/18-2a5d45dd799f1761bdd573386866b94b1f80351510995bb1b8b466030244574e.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/19-ac0d42cf4abe058342d66602a5f5dcdddce65022e24ce5e4e8dc0bf9eadaa5eb.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/20-f7f05ec805fd3adf7348c7320d7325377300dc3ae42e933bedef376ba0b77911.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/painting/21-8b5fd94a18d021f7f80b5069bfb49beabd50f675bca8e5e7bfdfa9e4a86348d2.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="absolute grid grid-cols-7 gap-4 shrink-0 md:mt-[340px] 2xl:-mt-[340px]">
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/1-875dd9aa9667da8902ba2b8ceac70d9cdadcd6ca3920288aa053753446158283.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/2-cfb669458626569a12c11f3b3cad05b727cbf84ab3162523ef62ecad1c0a0147.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/3-65b05c1948ab846eb4b62417369ab0265a3a0f0ed60bee1554cf8070f2beee8a.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/4-ac2e013577a60b6f5c9f0327668131c565c82a19cc7a1a958d3834316a7525c8.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/5-8002a885e07c73216758dc70d3de64dedb8a1d62b2b65ff5ea306f6178eebf69.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/6-abd92aa12f0996bce9ef3bf34419ac93af80e67dd55c08f5fb3d090834b86096.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/7-ab9a043db2c0baabdcb7d99af34497e622b5ecfbaf8c3dbc4ea43f6f79dc1a6d.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/8-23cc4f9a157234c715c5df33143bd346019c2d39e3769449af8f56037e9901a1.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/9-9bb4d06e957faaacddb03a87cba84abf8c30789cf986cc363abe20e62b381331.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-30 md:h-80 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/10-f904178a3de42905fa271d6f2ac84b5fa2bc8aac35780db0f4095dbd1a345cb6.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/11-0db75fcfb2b0a01fb28ad143c11b86dd652a3140fcd58b4e1471f6a8d71cabb1.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/12-54ad8a0671d514b22d778f7b625aa33b7f3ed1247aa051627e6df570ba1c5a53.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/13-cfeb9ef94f06fae377f3d349ccecf6e5f3d8ad65d28c5b651cb4e599aa03dcf2.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/14-d2a74ed2b31b769d331141172f0ac0e6ef036ebb138874dba1807f9c9a62c937.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/15-4638ddd51055e917745c5f16c4596c48bf9fc6138ddce5a349e585d9718ef9f8.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/16-439bf55d8a6d3e583ac1194f79917a39f91fe216d3ff55b82bf79bad5f489520.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/17-bb6f204ace87a17ce92877a44af9a952e9701fdac42dfc30b9ea701efe42a5d4.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-40 md:h-112 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/18-54d1999e77837773ae900a43c1fb0cf695fc46ec2ab2bfdeac7308b70105b9e8.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
+                                <div class="flex flex-col gap-4">
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/19-8897380c17d4997ee5c027a5a4d4201564c5a7db80e111c3ce67ced6a8fc5dc6.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-36 md:h-96 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/20-0f0916294479de7f117225076722c0e16f98460d28d83151154575ea66391d7b.png" />
+                                    </div>
+                                    <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
+                                        <img class="w-full h-48 md:h-128 object-cover" loading="eager"
+                                            src="https://image.computer/assets/img/slides/concept/21-bb1d6bfa79164fdde233f78b7591c42eae7e9e4e9dd9cbc54e766b11611d780e.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="swiper-slide">
-                <h2 class="text-yellow-500 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] font-extrabold">painting</h2>
-            </div>
-            <div class="swiper-slide">
-                <h2 class="text-cyan-500 text-[24px] sm:text-[28px] md:text-[32px] lg:text-[48px] xl:text-[52px] 2xl:text-[60px] font-extrabold">concept art</h2>
-            </div>
-        </div>
-        <div class="swiper-pagination -mt-[250px] lg:-mt-[225px] 2xl:-mt-[300px]"></div>
-        <div class="static text-center">
-            <p class="text-black text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[21px] 2xl:text-[22px] mt-[20px] px-[60px] sm:px-[140px] md:px-[180px] lg:px-[280px] xl:px-[400px] 2xl:px-[520px]">
-                Use our powerful AI technology to generate any type of image you can think of. In a matter of seconds.
-            </p>
         </div>
     </div>
-    <div class="absolute inset-0 swiper2 mySwiper2 max-h-full text-center mx-auto -z-10 px-[10px] bg-gradient-to-r from-zinc-400 via-zinc-200 to-zinc-400 overflow-hidden">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="absolute grid grid-cols-7 gap-4 shrink-0 sm:mt-[80px] md:mt-[100px] lg:mt-[320px] xl:mt-[480px] 2xl:mt-[560px]">
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/1-6ef915041f5389ecf4ec0cf6b6cb76a14285786f2680139ec835f1c11e34c1b4.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/2-3b554b08df909dffe5e37920eabf8140dc94edafdcad0806a87b1f6c7c267422.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/3-d038b764a9c2ef51ca8bed304b0d488e69238f658ae346b95c22a9f1634bb2b5.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/4-a3545f141e979dcd06cb5a0037b8d00eb6258ff420268b9135f0c7e3e203df44.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/5-87a48483b5cebd4728e65931ebfed977456e6eb7f0cc2b85304a1b7528aa78fa.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/6-71d0c14c9c75e7875183dbb922ed0634fa0595a37bb9b14365eb70b1e400879b.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/7-1b3e50f4d38a94c290af4df48484dc083fce3f2fbedf94004c0221d8324900b1.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/8-4a8d42c30cabf28c3dbd740e90e3a71ea655d79027f951fc50ef3bf7f9422790.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/9-a30f819659b5b6e9021700339ff5c1b037e5fa2a614b69f15f9f7bbc8b45044e.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/10-8ddce98ec7bae1ee068fc0a56d7c5d72799e848c8dc3e53790eaf212cfa844f7.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/11-9c90c8d4b95d40e06b459a4c17625819ae59f9957410899b5c32f144bc17b663.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/12-8bd4be1216d353daaaf61860eb4ad66b320883d4581546c53a7b708540fa81c7.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/13-84009fb2cafb09512985defaeefee75322800278e5610d79c59b7eb06df05f52.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/14-25fe0d0a8d990c7df6b5b9feabfc5451c0b235515f4bc492610b4ce8ebe94dd0.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/15-d4038cfaaa8beadca896fa09925e11d1aad0d8c4a170b58a4eb1b42d3ca57de0.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/16-2e94319cfdb3ea8dda6aad74ccf163346f1db6cfa2ef413f1e79d0610b065f89.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/17-b0065d55e13cac95906b50c41c746b08766bc76108c994003381746b80fb8887.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/18-0238233e45b6fd311f859f7e42f819c9f17332b7b32fbc89ef2070a6c96b5cbf.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/19-cf23e4e2e82a7728131b52dff9efe1bd3e11262043752542a22888d2a4a3e38f.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/20-d2d4a0f9b4098693101c7ae77e1d666c959ae6d3880ab86b32f8fdf3edb52842.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/interior/21-006756d957a1f115c2e34bd013cc0e62c89c09af65f0e5a7482958f7715057bd.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+    <div class="fixed bottom-4 right-4 hidden lg:block z-10">
+        <a target="_blank"
+            class="px-2 py-1 rounded-full bg-white dark:bg-gray-900 hover:bg-red-50 dark:hover:bg-red-900 hover:text-red-800 dark:hover:text-white drop-shadow-xl flex items-center"
+            href="/cdn-cgi/l/email-protection#600d01120320090d0107054e030f0d1015140512">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-7 h-7 text-red-500">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288" />
+            </svg>
+            <div class="text-sm font-medium mr-1 w-full text-center relative z-50">
+                Email us
             </div>
-            <div class="swiper-slide">
-                <div class="absolute grid grid-cols-7 gap-4 shrink-0 sm:mt-[80px] md:mt-[100px] lg:mt-[320px] xl:mt-[480px] 2xl:mt-[560px]">
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/1-2a0ca28cfabf580e1ffce88b27a633f0a6b57583e225fd5ea1f5d2c4ce3f9300.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/2-df5391e5cf2b957971e22f889d241b937ba0e3135b9a9ea1312f13dbbce3af49.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/3-229acb8b1d3efa664f3cafe874cee175561bfbf23344aaa0e979d7e579ef9d56.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/4-44405b912af1042ed811fd05b889e44f1d5b7a7ddb2a5382cc4c29fa4d393794.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/5-f75e2ec89045c8132c9811b0a6bd3c1118dd5ea60d61aac964d0c89b50db7630.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/6-00e5af5b78c95fff76d53ebcb9a29eb1adbceb127e41b88f86eb8fa1792d55b7.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/7-e1c71881f45e4cd65686efc598c553fd3413840a97d84948f77bf5417fd303e4.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/8-9b6516a4bd16471c5c8b59e9989807bf6ce702fc6160a22ad798a10490669c4d.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/9-58dd7b9fdf2a8c3f2c62280b7a3cf81c5a7d7ab25eb4e2a80235edd1f9b5b894.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/10-0f6c677c96e4abacf3097b2924f7ed5142d30771036921afe1f62b1d4ad55321.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/11-ec57e25f7875d9044d009644db90afbdc6e4fb8e2eb8038aaf4cd6af5b1abdbb.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/12-3815f591880fbdb61e60b70eed72ab42925100d3856f3bb8ac00fddd63cd09be.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/13-daa1aa0b987d6a3a8eabd1d8db61cb58f84e4327ca81c205004a49a82f048779.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/14-809d63f951897828949a28a06932ee6bd8d10daea9f0d6c9f8973c0c78f133eb.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/15-5a66f4503c0f04e483fb0ef8ed5aa7e7beba6ee8abed541b10031ec3433a48f7.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/16-6abe316a55a28c6e3b8955ed4eab2b2e58ffb2c57c9e370b7d48592069c93c38.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/17-61b80ec80bc8a50d3dc23563f3c127a2e27624d6c8a9108bb57837a09e7c2c4d.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/18-874bbc65221f7aee92642d2281175613334e6384b772c7eaf30bcfc817c1b4b0.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/19-8c4c073f27442ad9fb59c1aab803e8a4d1ec72e98fad7969c0529fef4516c789.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/20-40945376d87bb9879b2ec316aa18d146fd4728e3970ff65ab535553ae0238004.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/fashion/21-a3d866edf4a094bd07fa770c2574834594cacf110a9c03e0c4c2939ba4a27f3f.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="absolute grid grid-cols-7 gap-4 shrink-0 sm:mt-[80px] md:mt-[100px] lg:mt-[320px] xl:mt-[480px] 2xl:mt-[560px]">
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/1-6729e6fe92b6b6e90bef48fb32ca81cbe2ccabab9404ddcd6564a072728e3a0c.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/2-40fd2f801dea062e17b5016b26069c67faa3cdd9a47e57f2804c9f97e14aa58d.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/3-c96e25d5559fc6d5d1d26ecf4b03ccd5c93ebdd0df62b53725c7a3b328027408.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/4-8b0f1d826d7c08cdffe2e615a8dc33979ec78079d4e27294d7fcd0713adfd51a.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/5-99522e8536c5084ceefba72bbb8a4ff3172442014727b46aef8051f59fef52a6.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/6-d00a72e576b692fbb0433d01aca3d5a984d4397fdd8ae3c8afbf6b51df522743.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/7-edbd49bf23ef05a3f2b8b7cc3660dbfcf710adf6e2f3881ef955e41cdd108c01.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/8-cf19f6a68388a5e50097c9aa59aab5a8dbd68241844c868276a4c4752dae6121.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/9-edadb5eaf86ddd8a5d7a47ff139fb0144b0c3cc6899113ff3e9125173fdec846.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/10-b0360419636549dcba629749b146f539b666a6f33b273dc48040a0b6b52aaa13.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/11-3d215d94b19f549f9608fd2333124f93e62b0dc45cc706f25525c272c3bbe1f7.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/12-fbdc53706770d9aedbf648a134066d9c519bbd66bc7327d457cca7cd130a3b24.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/13-10d54833ba9765fa23b96576aaa82df8bde944207326c9240ca6cdc31bb22654.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/14-ed53d73b3bac2f1cbce4b688f74309de8ba6e05592891aaf9910444ba8709b7e.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/15-80391b7dd5ddd43753c6e7a0239bd69477008150044b47826a73c18404c3a651.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/16-73d51d8fb19a924b0890f9bc46cfba06f8cc5157241a9052ed015047446b868b.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/17-48344eeafbf323dc8782576197c67aba41ca4d472b31cf03ad4ea3d270289a68.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-40 md:h-112 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/18-2a5d45dd799f1761bdd573386866b94b1f80351510995bb1b8b466030244574e.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/19-ac0d42cf4abe058342d66602a5f5dcdddce65022e24ce5e4e8dc0bf9eadaa5eb.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/20-f7f05ec805fd3adf7348c7320d7325377300dc3ae42e933bedef376ba0b77911.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/painting/21-8b5fd94a18d021f7f80b5069bfb49beabd50f675bca8e5e7bfdfa9e4a86348d2.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="absolute grid grid-cols-7 gap-4 shrink-0 sm:mt-[80px] md:mt-[100px] lg:mt-[320px] xl:mt-[480px] 2xl:mt-[560px]">
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/1-875dd9aa9667da8902ba2b8ceac70d9cdadcd6ca3920288aa053753446158283.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/2-cfb669458626569a12c11f3b3cad05b727cbf84ab3162523ef62ecad1c0a0147.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/3-65b05c1948ab846eb4b62417369ab0265a3a0f0ed60bee1554cf8070f2beee8a.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/4-ac2e013577a60b6f5c9f0327668131c565c82a19cc7a1a958d3834316a7525c8.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/5-8002a885e07c73216758dc70d3de64dedb8a1d62b2b65ff5ea306f6178eebf69.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/6-abd92aa12f0996bce9ef3bf34419ac93af80e67dd55c08f5fb3d090834b86096.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/7-ab9a043db2c0baabdcb7d99af34497e622b5ecfbaf8c3dbc4ea43f6f79dc1a6d.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/8-23cc4f9a157234c715c5df33143bd346019c2d39e3769449af8f56037e9901a1.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/9-9bb4d06e957faaacddb03a87cba84abf8c30789cf986cc363abe20e62b381331.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/10-f904178a3de42905fa271d6f2ac84b5fa2bc8aac35780db0f4095dbd1a345cb6.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/11-0db75fcfb2b0a01fb28ad143c11b86dd652a3140fcd58b4e1471f6a8d71cabb1.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/12-54ad8a0671d514b22d778f7b625aa33b7f3ed1247aa051627e6df570ba1c5a53.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/13-cfeb9ef94f06fae377f3d349ccecf6e5f3d8ad65d28c5b651cb4e599aa03dcf2.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/14-d2a74ed2b31b769d331141172f0ac0e6ef036ebb138874dba1807f9c9a62c937.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/15-4638ddd51055e917745c5f16c4596c48bf9fc6138ddce5a349e585d9718ef9f8.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-48 md:h-128 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/16-439bf55d8a6d3e583ac1194f79917a39f91fe216d3ff55b82bf79bad5f489520.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/17-bb6f204ace87a17ce92877a44af9a952e9701fdac42dfc30b9ea701efe42a5d4.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/18-54d1999e77837773ae900a43c1fb0cf695fc46ec2ab2bfdeac7308b70105b9e8.png" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8 md:[&:nth-child(7n-5)]:translate-y-16 md:[&:nth-child(7n-4)]:translate-y-48 md:[&:nth-child(7n-3)]:translate-y-80 md:[&:nth-child(7n-2)]:translate-y-48 md:[&:nth-child(7n-1)]:translate-y-16">
-                        <div class="flex flex-col gap-4">
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/19-8897380c17d4997ee5c027a5a4d4201564c5a7db80e111c3ce67ced6a8fc5dc6.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-30 md:h-80 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/20-0f0916294479de7f117225076722c0e16f98460d28d83151154575ea66391d7b.png" />
-                            </div>
-                            <div class="bg-gray-100 dark:bg-gray-900 rounded-2xl overflow-hidden">
-                                <img class="w-full h-36 md:h-96 object-cover" loading="eager"
-                                    src="https://image.computer/assets/img/slides/concept/21-bb1d6bfa79164fdde233f78b7591c42eae7e9e4e9dd9cbc54e766b11611d780e.png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div
-        class="fixed bottom-0 left-0 right-0 z-30 bg-gradient-to-b from-white/0 dark:from-black/0 to-white dark:to-black p-8 flex items-center">
-        <div class="mx-auto">
-            <a class="flex group items-center cursor-pointer mt-5 rounded-full border border-transparent bg-black dark:bg-white py-2 px-4 text-lg font-medium text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100"
-                href="/start">
-                Try it yourself
-                <svg class="mt-0.5 ml-2 -mr-1 stroke-white dark:stroke-black stroke-2" fill="none" width="12"
-                    height="12" viewBox="0 0 10 10" aria-hidden="true">
-                    <path class="opacity-0 transition group-hover:opacity-100" d="M0 5h7"></path>
-                    <path class="transition group-hover:translate-x-[3px]" d="M1 1l4 4-4 4"></path>
-                </svg>
-            </a>
-        </div>
+        </a>
     </div>
 
     <!-- Swiper JS -->
@@ -558,23 +563,12 @@
             spaceBetween: 30,
             loop: true,
             autoplay: {
-                delay: 2000,
+                delay: 5000,
                 disableOnInteraction: false,
             },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
-            },
-        });
-    </script>
-    <script>
-        var swiper2 = new Swiper(".mySwiper2", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 2000,
-                disableOnInteraction: false,
             },
         });
     </script>
