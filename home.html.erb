@@ -37,10 +37,10 @@
                         <div class="text-black">Imagine your next</div>
                         <div class="absolute swiper mySwiper">
                             <div class="swiper-wrapper">
-                            <% colors = %w[red blue yellow cyan] %>
-                            <% @marketing_collections.each_with_index do |x,i| %>
-                                <div class="swiper-slide text-<%= colors[i %colors.length] %>-600 -mt-[20px] md:-mt-[10px]">interior design</div>
-                            <% end %>
+                                <% colors = %w[red blue yellow cyan] %>
+                                <% @marketing_collections.each_with_index do |x,i| %>
+                                    <div class="swiper-slide text-<%= colors[i %colors.length] %>-600 -mt-[20px] md:-mt-[10px]">interior design</div>
+                                <% end %>
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -49,7 +49,7 @@
                         Use our powerful AI technology to generate any type of image you can think of. Easily and in a matter of seconds.
                     </div>
                 </div>
-                <div class="absolute inset-0 -bottom-[25%] md:-bottom-[50%] lg:-bottom-[100%] xl:-bottom-[50%] 2xl:-bottom-[25%] w-[200%] xl:w-full flex justify-center transform -translate-x-1/4 xl:-translate-x-0">
+                <div class="absolute inset-0 -bottom-[25%] sm:-bottom-[60%] md:-bottom-[90%] lg:-bottom-[135%] xl:-bottom-[65%] 2xl:-bottom-[35%] w-[200%] xl:w-full flex justify-center transform -translate-x-1/4 xl:-translate-x-0">
                     <div class="absolute swiper mySwiper">
                         <div class="swiper-wrapper">
                             <% @marketing_collections.each_with_index do |x,i| %>
@@ -57,14 +57,11 @@
                                     <div class="absolute grid grid-cols-7 gap-4 shrink-0">
                                         <% x.invokes.each_slice(3) do |invokes| %>
                                             <div class="[&:nth-child(7n-5)]:translate-y-8 [&:nth-child(7n-4)]:translate-y-24 [&:nth-child(7n-3)]:translate-y-40 [&:nth-child(7n-2)]:translate-y-24 [&:nth-child(7n-1)]:translate-y-8
-                                                        md:[&:nth-child(7n-5)]:translate-y-10 md:[&:nth-child(7n-4)]:translate-y-26 md:[&:nth-child(7n-3)]:translate-y-60 md:[&:nth-child(7n-2)]:translate-y-24 md:[&:nth-child(7n-1)]:translate-y-10
-                                                        lg:[&:nth-child(7n-5)]:translate-y-10 lg:[&:nth-child(7n-4)]:translate-y-26 lg:[&:nth-child(7n-3)]:translate-y-60 lg:[&:nth-child(7n-2)]:translate-y-24 lg:[&:nth-child(7n-1)]:translate-y-10
-                                                        xl:[&:nth-child(7n-5)]:translate-y-10 xl:[&:nth-child(7n-4)]:translate-y-26 xl:[&:nth-child(7n-3)]:translate-y-60 xl:[&:nth-child(7n-2)]:translate-y-24 xl:[&:nth-child(7n-1)]:translate-y-10
-                                                        2xl:[&:nth-child(7n-5)]:translate-y-10 2xl:[&:nth-child(7n-4)]:translate-y-26 2xl:[&:nth-child(7n-3)]:translate-y-60 2xl:[&:nth-child(7n-2)]:translate-y-24 2xl:[&:nth-child(7n-1)]:translate-y-10">
+                                                        md:[&:nth-child(7n-5)]:translate-y-10 md:[&:nth-child(7n-4)]:translate-y-26 md:[&:nth-child(7n-3)]:translate-y-60 md:[&:nth-child(7n-2)]:translate-y-24 md:[&:nth-child(7n-1)]:translate-y-10">
                                                 <div class="flex flex-col gap-4 justify-center items-center">
                                                     <% invokes.each_with_index do |invoke,ii| %>
                                                         <div class="bg-gray-100 dark:bg-gray-900 drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)] rounded-2xl overflow-hidden">
-                                                        <img class="max-h-[512px] w-auto object-cover" loading="eager" src="<%= invoke.medium_url %>" />
+                                                            <img class="max-h-[512px] w-auto object-cover" loading="eager" src="<%= invoke.medium_url %>" />
                                                         </div>
                                                     <% end %>
                                                 </div>
@@ -75,7 +72,7 @@
                             <% end %>
                         </div>
                     </div>
-            </div>
+                </div>
             </div>
         </div>
     </div>
